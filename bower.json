@@ -1,0 +1,29 @@
+{
+  "name": "n2vw",
+  "description": "Convert number to Vietnamese words",
+  "main": "lib/n2vw.js",
+  "authors": [
+    "Trexnix"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "es6",
+    "convert",
+    "number",
+    "word",
+    "vietnamese",
+    "library",
+    "universal",
+    "umd",
+    "commonjs"
+  ],
+  "homepage": "https://github.com/trexnix/n2vw",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
