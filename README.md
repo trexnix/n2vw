@@ -2,7 +2,38 @@
 
 An universal library for converting number to Vietnamese words
 
-## Getting started
+## Installation
+
+```
+// Using npm:
+$ npm install n2vw
+
+// Using Yarn:
+$ yarn add n2vw
+
+// Using Bower:
+$ bower install n2vw
+```
+
+### Node
+
+```
+var converter = require('n2vw');
+```
+
+### `<script>` tag
+
+```
+<script src="bower_components/n2vw/lib/n2vw.min.js"></script>
+```
+
+## Usage
+
+```
+converter.getFullText(123456789);
+// => 'một trăm hai mươi ba triệu, bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín'
+```
+
 
 ## CLI
 

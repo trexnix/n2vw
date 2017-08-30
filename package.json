@@ -1,6 +1,6 @@
 {
   "name": "n2vw",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Convert number to Vietnamese words",
   "main": "lib/n2vw.js",
   "scripts": {
