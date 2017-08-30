@@ -24,7 +24,7 @@ export default class NumberToWord {
     let groups = [];
     const remainder = string.length % 3;
 
-    if (remainder !== 0) {
+    if (string.length > 3 && remainder !== 0) {
       groups.push(string.substr(0, remainder));
       string = string.substr(remainder);
     }

@@ -1,6 +1,6 @@
 # N2VW
 
-An universal library for converting number to Vietnamese words
+An universal library for converting number to Vietnamese words.
 
 ## Installation
 
@@ -18,7 +18,7 @@ $ bower install n2vw
 ### Node
 
 ```
-var converter = require('n2vw');
+var n2vw = require('n2vw');
 ```
 
 ### `<script>` tag
@@ -30,10 +30,14 @@ var converter = require('n2vw');
 ## Usage
 
 ```
-converter.getFullText(123456789);
-// => 'một trăm hai mươi ba triệu, bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín'
-```
+var converter = new n2vw();
 
+converter.getFullText(1234);
+// => 'một nghìn, hai trăm ba mươi bốn'
+
+converter.getFullText('99');
+// => 'chín mươi chín'
+```
 
 ## CLI
 

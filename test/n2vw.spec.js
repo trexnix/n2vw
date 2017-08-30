@@ -10,6 +10,7 @@ const expect = chai.expect;
 describe('Given an instance of n2vw library', () => {
   describe('.breakIntoGroupOfThree', () => {
     it('should break the number string into groups of three number', () => {
+      expect(Converter.breakIntoGroupOfThree('99')).to.be.eql(['99']);
       expect(Converter.breakIntoGroupOfThree('1234567')).to.be.eql(['1', '234', '567']);
     });
   });
@@ -44,6 +45,7 @@ describe('Given an instance of n2vw library', () => {
   describe('#getFullText', () => {
     it('should convert a number to words', () => {
       let converter = new Converter;
+      expect(converter.getFullText(99)).to.be.eql('chín mươi chín');
       expect(converter.getFullText(123456)).to.be.eql('một trăm hai mươi ba nghìn, bốn trăm năm mươi sáu');
       expect(converter.getFullText(9987654321)).to.be.eql('chín tỉ, chín trăm tám mươi bảy triệu, sáu trăm năm mươi bốn nghìn, ba trăm hai mươi mốt');
     });
